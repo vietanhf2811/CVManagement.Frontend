@@ -7,8 +7,8 @@ import { RouterLink } from '@angular/router';
   selector: 'app-register',
   standalone: true,
   imports: [FormsModule, RouterLink],
-  templateUrl: './register.html',
-  styleUrl: './register.css'
+  templateUrl: './register.component.html',
+  styleUrl: './register.component.css'
 })
 export class Register {
   fullName = '';

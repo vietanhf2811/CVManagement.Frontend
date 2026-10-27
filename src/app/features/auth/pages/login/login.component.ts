@@ -7,8 +7,8 @@ import { RouterLink } from '@angular/router';
   selector: 'app-login',
   standalone: true,
   imports: [FormsModule, RouterLink],
-  templateUrl: './login.html',
-  styleUrl: './login.css'
+  templateUrl: './login.component.html',
+  styleUrl: './login.component.css'
 })
 export class Login {
   email = '';
@@ -21,7 +21,6 @@ export class Login {
       return;
     }
 
-    // Connect to the authentication API in the next step.
     console.log('Login form is valid.');
   }
 }
