@@ -1,0 +1,15 @@
+.candidate-dashboard {
+  padding: 12px;
+}
+
+.candidate-dashboard h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.candidate-dashboard p {
+  color: #64748b;
+  font-size: 14px;
+}

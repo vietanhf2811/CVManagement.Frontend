@@ -1,59 +1,38 @@
-# CVManagementFrontend
+# CVManagement Frontend (React.js + Vite + TypeScript)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.7.
+This is the frontend client for **CVManagement**, converted from Angular to **React.js + TypeScript + Vite**.
 
-## Development server
+## Tech Stack
+- **Framework:** React 18
+- **Build Tool:** Vite
+- **Language:** TypeScript
+- **Routing:** React Router v6
+- **HTTP Client:** Axios
+- **Styling:** CSS3 & Bootstrap 5
 
-To start a local development server, run:
+## Getting Started
 
+### 1. Install Dependencies
 ```bash
-ng serve
+npm install
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+### 2. Development Server
 ```bash
-ng generate component component-name
+npm run dev
+# Or
+npm start
+```
+The application will start at `http://localhost:4200`.
+
+### 3. Production Build
+```bash
+npm run build
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Features Migrated
+- **Auth Layout:** Split-screen responsive layout with brand banner & features showcase
+- **Login Page:** Sign-in form with validation, remember me, forgot password
+- **Register Page:** Candidate/HR registration form with client validation and API integration (`POST /api/auth/register`)
+- **Dashboard Layout:** Top navigation header, responsive sidebar with active links, logout handler
+- **API Service:** Axios instance with base URL configuration (`https://localhost:7081/api`) and JWT interceptor support
